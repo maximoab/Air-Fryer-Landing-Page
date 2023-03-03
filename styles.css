@@ -179,6 +179,9 @@ h1 h2 h3 h4 h5 h6 {
 	border-radius: 65px;
 	margin-top: 5px;
 }
+#form .btn:hover {
+	background-color: green;
+}
 
 #features {
 	max-width: 1000px;
@@ -254,7 +257,7 @@ h1 h2 h3 h4 h5 h6 {
 	margin: 20px 0;
 }
 
-.product .btn {
+.btn {
 	width: 80%;
 	background-color: var(--highgreen2);
 	border: 1px solid green;
@@ -264,6 +267,12 @@ h1 h2 h3 h4 h5 h6 {
 	height: 50px;
 	border-radius: 65px;
 	margin-top: 15px;
+	padding: 12px;
+}
+
+.btn:hover {
+	background-color: green;
+	color: #fff;
 }
 
 .btn-text {
