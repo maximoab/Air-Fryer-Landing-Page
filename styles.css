@@ -290,7 +290,7 @@ h3 {
 
 #how-it-works {
 	background-color: var(--softgreensoft);
-	max-width: 1300px;
+	/*max-width: 1300px;*/
 	margin: auto;
 	padding: 70px 20px 80px 20px;
 	text-align: center;
@@ -452,7 +452,9 @@ footer {
 @media only screen and (max-width: 450px) {
 	#hero {
 		background-image: unset;
+		background-position: 49%;
 		margin-top: -24px;
+		padding-bottom: 60px;
 	}
 
 	#nav-bar ul li {
