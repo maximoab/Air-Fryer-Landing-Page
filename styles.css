@@ -450,7 +450,7 @@ footer {
 
 .hero-small {
 	padding: 150px 150px;
-	background-image: url(./Images/healthy-kitchen.jpg);
+	background-image: url(./Images/philips-nutriU-app-connected-kitchen-solutions.jpeg);
 	background-size: cover;
 	background-position: 50%;
 }
@@ -483,4 +483,12 @@ div.hero-small-content {
 	.hero-small {
 		padding: 60px 20px;
 	}
+}
+
+.buttons-store {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin: auto;
+	padding: 60px 0;
 }
