@@ -1,5 +1,8 @@
 /*global element styling*/
 :root {
+	--softgreensoft: rgba(237,240,202,.25);
+	--softgreenyellow: #edf0ca;
+	--softgreen: #97B131;
 	--softgreen: #97B131;
 	--highgreen: #5B8F22;
 	--highgreen2: #549E25;
@@ -382,6 +385,12 @@ iframe {
 	background-color: green;
 	color: #fff;
 }
+
+a.btn:active,
+a.btn:focus {
+	color: #fff;
+}
+
 
 .btn-text {
 	margin: auto;
