@@ -47,12 +47,12 @@ a {
 }
 
 h1 h2 h3 h4 h5 h6 {
-	color: var(--darkgreen);
 }
 
 h2 {
 	text-align: center;
 	padding-bottom: 2rem;
+	color: var(--darkgreen);
 }
 
 h3 {
@@ -249,10 +249,15 @@ h3 {
 	margin: 20px auto;
 }
 
+.grid h3 {
+	color: var(--highgreen);
+}
+
 .grid .fa-solid {
 	color: orange;
+	color: var(--highgreen);
 	font-size: 40px;
-	border: 2px solid orange;
+	border: 2px solid var(--highgreen);
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
