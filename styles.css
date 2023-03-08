@@ -79,6 +79,12 @@ h3 {
 	padding-right: 0;
 }
 
+@media screen and (max-width:500px) {
+	#header {
+		padding: 0 10px;
+	}
+}
+
 .logo {
 	width: 30vh;
 }
