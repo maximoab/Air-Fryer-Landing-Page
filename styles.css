@@ -413,13 +413,13 @@ footer {
 }
 
 .product li {
-	padding-bottom: 1rem;
+	padding-bottom: 18px;
 	border-bottom: 1px solid #ddd;
 }
 
 .product li:nth-last-of-type(1) {
-	/*padding-bottom: unset;*/
-	/*border-bottom: unset;*/
+	padding-bottom: unset;
+	border-bottom: unset;
 }
 
 
