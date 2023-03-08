@@ -52,7 +52,7 @@ h1 h2 h3 h4 h5 h6 {
 h2 {
 	text-align: center;
 	padding-bottom: 2rem;
-	color: var(--darkgreen);
+	color: var(--highgreen);
 }
 
 h3 {
@@ -250,7 +250,7 @@ h3 {
 }
 
 .grid h3 {
-	color: var(--highgreen);
+	color: var(--darkgreen);
 }
 
 .grid .fa-solid {
