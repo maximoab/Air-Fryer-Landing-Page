@@ -50,6 +50,16 @@ h1 h2 h3 h4 h5 h6 {
 	color: var(--darkgreen);
 }
 
+h2 {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+h3 {
+	text-align: center;
+	font-size: 26px;
+}
+
 /*global classes styling*/
 
 .container {
@@ -90,7 +100,6 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 #nav-bar a:active, a:focus, a:hover{
-	/*text-decoration: underline;*/
 	border-bottom: 3px solid green;
 	color: green;
 }
@@ -111,10 +120,19 @@ h1 h2 h3 h4 h5 h6 {
 
 #hero h2  {
 	font-weight: 400;
-	font-size: 32px;
-	padding: 20px;
+	font-size: 40px;
+	padding: 20px 0;
 	line-height: 1.5;
 	color: var(--darkgreen);
+}
+
+@media screen and (max-width: 800px) {
+	#hero h2 {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 20px;
+	}
 }
 
 #hero span {
@@ -186,9 +204,15 @@ h1 h2 h3 h4 h5 h6 {
 #features {
 	max-width: 1300px;
 	margin: auto;
-	padding: 60px 20px;
+	padding: 80px 20px;
 	text-align: center;
-	gap: 25px;
+}
+
+.desc p {
+	font-size: 18px;
+	font-weight: 600;
+	color: #6b6b6b;
+	padding-top: 1rem;
 }
 
 @media screen and (min-width: 800px ) {
@@ -197,6 +221,7 @@ h1 h2 h3 h4 h5 h6 {
 		max-width: 800px;
 		margin: auto;
 	}
+
 	p {
 		max-width: 800px;
 		margin: auto;
@@ -204,7 +229,7 @@ h1 h2 h3 h4 h5 h6 {
 	iframe {
 	margin-top: 60px;
 	width: 800px;
-	height: 500px;
+	height: 450px;
 }
 }
 
@@ -224,7 +249,7 @@ h1 h2 h3 h4 h5 h6 {
 	gap: 40px;
 	width: 100%;
 	min-width: 340px;
-	margin: 20px 0;
+	margin: 20px auto;
 }
 
 .grid .fa-solid {
@@ -240,21 +265,60 @@ h1 h2 h3 h4 h5 h6 {
 	margin-bottom: 24px;
 }
 
+@media screen and (max-width: 1100px) {
+	#features {
+		max-width: 740px;
+	}
+	.icon-grid {
+		flex-direction: column;
+	}
+}
+
 #how-it-works {
 	max-width: 1300px;
 	margin: auto;
-	padding: 60px 20px;
+	padding: 0px 20px 60px 20px;
 	text-align: center;
 }
 
+iframe {
+	margin-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+	iframe {
+		width: 100%;
+		height: 212px;
+	}
+}
 
 #pricing {
 	max-width: 1280px;
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
 	margin: 20px auto;
 	gap: 40px;
+}
+
+#pricing h2 {
+	text-align: center;
+}
+
+.product-grid {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+	gap: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+	.product-grid	{
+		flex-direction: column;
+		margin: auto;
+		align-items: center;
+	}
+	.product {
+		width: unset;
+	}
 }
 
 .product {
@@ -316,10 +380,7 @@ footer {
 	margin-top: 60px;
 }
 
-@media only screen and (max-width: 800px) {
-	#header {
-		/*flex-direction: column;*/
-	}
+@media only screen and (max-width: 1100px) {
 	.logo {
 	width: unset;
 	}
@@ -333,11 +394,11 @@ footer {
 		align-items: center;
 		text-align: center;
 	}	
-	#pricing {
+	.product-grid {
 		flex-direction: column;
 	}
 	.product {
-		max-width: 300px;
+		max-width: 400px;
 		width: 100%;
 		margin: auto;
 		margin-bottom: 20px;
@@ -355,7 +416,7 @@ footer {
 		font-size: 15px;
 	}
 	#features {
-		padding: 0px 20px 20px 20px;
+		padding: 0px 20px 40px 20px;
 	}
 }
 
@@ -364,4 +425,45 @@ footer {
   * {
     scroll-behavior: smooth;
   }
+}
+
+#hero-small {
+	margin: 60px auto;
+}
+
+.hero-small {
+	padding: 150px 150px;
+	background-image: url(./Images/healthy-kitchen.jpg);
+	background-size: cover;
+	background-position: 50%;
+}
+
+div.hero-small-content {
+	max-width: 1280px;
+	margin: auto;
+	padding: 0 30px;
+	color: #fff;
+	text-shadow: 2px 2px 20px  #111;
+}
+
+.hero-small-content h3 {
+	font-size: 42px;
+	text-align: left;
+}
+
+.hero-small-content p {
+	margin: 0;
+	font-weight: 600;
+}
+
+@media screen and (max-width:1000px) {
+	.hero-small {
+		padding: 250px 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hero-small {
+		padding: 60px 20px;
+	}
 }
