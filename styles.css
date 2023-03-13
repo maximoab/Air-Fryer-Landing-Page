@@ -322,6 +322,18 @@ iframe {
 	padding-right: 20px;
 }
 
+#pricing p {
+ 	margin-bottom: 3rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+	#pricing p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
 .product-grid {
 	display: flex;
 	/*flex-wrap: wrap;*/
