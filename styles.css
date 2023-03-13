@@ -107,9 +107,12 @@ h3 {
 	padding: 0 20px;
 }
 
+#nav-bar a {
+	color: var(--darkgreen)
+}
+
 #nav-bar a:active, a:focus, a:hover{
-	border-bottom: 3px solid green;
-	color: green;
+	border-bottom: 3px solid var(--darkgreen);
 }
 
 #hero {
@@ -420,7 +423,7 @@ a.btn:focus {
 }
 
 .btn-text a {
-	color: var(--highgreen2);
+	color: var(--darkgreen);
 }
 
 footer {
