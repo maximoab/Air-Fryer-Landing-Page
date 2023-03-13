@@ -191,6 +191,7 @@ h3 {
 	background-color: #fff;
 	box-shadow: none;
 	text-align: center;
+	font-family: sans-serif;
 }
 
 #form .btn {
@@ -202,6 +203,7 @@ h3 {
 	height: 50px;
 	border-radius: 65px;
 	margin-top: 5px;
+	font-family: sans-serif;
 }
 #form .btn:hover {
 	background-color: green;
